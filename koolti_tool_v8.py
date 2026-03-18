@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-KOOLTI-TOOL v8.1.0
+KOOLTI-TOOL v8.1.1
 A terminal-based network & security toolkit.
 https://github.com/yourname/koolti-tool
 
@@ -106,7 +106,7 @@ def logo():
     print(LOGO)
     print()
     cprint(f"{DIM}{'▰'*55}{RST}")
-    cprint(f"  {BOLD}{LWHT}v8.0{RST}  {DIM}·{RST}  {LCYN}Real Engine{RST}  {DIM}·{RST}  {LMAG}100+ Modules{RST}  {DIM}·{RST}  {LYLW}{datetime.now().strftime('%Y-%m-%d  %H:%M:%S')}{RST}  ")
+    cprint(f"  {BOLD}{LWHT}v8.1{RST}  {DIM}·{RST}  {LCYN}Real Engine{RST}  {DIM}·{RST}  {LMAG}100+ Modules{RST}  {DIM}·{RST}  {LYLW}{datetime.now().strftime('%Y-%m-%d  %H:%M:%S')}{RST}  ")
     cprint(f"{DIM}{'▰'*55}{RST}")
     print()
 
