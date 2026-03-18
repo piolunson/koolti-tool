@@ -20,6 +20,14 @@ A terminal-based network & security toolkit with 80 modules across 5 categories.
 ```bash
 pip install requests psutil rich
 ```
+## Installation (Quick Start)
+
+```bash
+git clone https://github.com/piolunson/koolti-tool.git
+cd koolti-tool
+pip install -r requirements.txt
+python koolti_tool.py
+
 
 Optional GPU support:
 ```bash
