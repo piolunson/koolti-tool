@@ -160,6 +160,7 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 - Initial large release
 
 ## Legal Notice
+You are solely responsible for your actions.
 
 This tool is intended for educational purposes and authorized security testing only.  
 Use only on systems you own or have explicit written permission to test.  
