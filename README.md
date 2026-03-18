@@ -1,5 +1,9 @@
 # KOOLTI-TOOL v7.0
 
+![Version](https://img.shields.io/badge/version-v9-blue)
+![Python](https://img.shields.io/badge/python-3.x-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 A terminal-based network & security toolkit with 80 modules across 5 categories.
 
 ```
