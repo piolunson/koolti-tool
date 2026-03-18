@@ -27,7 +27,7 @@ git clone https://github.com/piolunson/koolti-tool.git
 cd koolti-tool
 pip install -r requirements.txt
 python koolti_tool.py
-
+```
 
 Optional GPU support:
 ```bash
