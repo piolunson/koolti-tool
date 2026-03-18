@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-v8.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-Custom--NC-red)
 ![Modules](https://img.shields.io/badge/modules-100-purple)
 
 A terminal-based network & security toolkit with **100 modules** across 5 categories.
@@ -171,8 +171,8 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 | 95 | Number Base Converter | DEC / BIN / OCT / HEX / Unicode |
 | 96 | Regex Tester | Test regex with match highlighting |
 | 97 | ASCII Art Generator | Text → block ASCII art (A–Z, 0–9) |
-| 98 | History Viewer | Browse saved session history |
-| 99 | History Clear | Permanently delete history files |
+| 98 | History Viewer | Browse saved session history by date |
+| 99 | History Clear | Permanently delete all history files |
 | 100 | Network Topology (ext) | Extended TTL-based route mapping |
 
 ## History
@@ -183,35 +183,36 @@ All module results are automatically saved to:
 ~/kooltitool/history/YYYY-MM-DD/HHMMSS_NNN_module_name.json
 ```
 
-Password-related modules (64, 67, 68, 87) are **excluded** from history.  
+Password-related modules **(64, 67, 68, 87)** are excluded from history.  
 Use module `98` to browse saved sessions, module `99` to clear them.
 
 ## Changelog
 
 ### v8.0.0
-- Added 20 new modules (46–62, 98–100): HTTP Fuzzer, JS Extractor, Form Extractor, Cookie Inspector, IP Reputation, Path Traversal, SQL Error Detector, Subdomain Takeover, TLS Checker, WhatWeb Lite, Latency Map, Certificate Transparency, Cache Inspector, Security Headers Score, DNS History, Multi-Port Banner Scan, Network Topology, History Viewer, History Clear
-- Added session history system — all results saved to `~/kooltitool/history/`
-- Total: 100 modules across 5 categories
+- Added 20 new modules (46–62, 98–100): HTTP Parameter Fuzzer, JS File Extractor, Form Extractor, Cookie Inspector, IP Reputation Check, Path Traversal Tester, SQL Error Detector, Subdomain Takeover Checker, TLS Version Checker, WhatWeb Lite, Latency Map, Certificate Transparency, HTTP Cache Inspector, Security Headers Score, DNS History Lookup, Multi-Port Banner Scan, Network Topology, History Viewer, History Clear
+- Added automatic session history system (`~/kooltitool/history/`)
+- Full English rewrite — zero comments, zero Polish text
+- GitHub-ready project structure
 
 ### v7.1.1
 - Fixed import issues in several modules
 
 ### v7.1.0
-- Added 20 new modules (NET category)
+- Added 20 new NET modules
 - Improved multiprocessing performance in Hash Cracker
-- Better TUI — ASCII logo, progress bars, color-coded categories
+- Better TUI — ASCII logo, color-coded progress bars, category headers
 
 ### v7.0.0
-- Initial large release — 80 modules
-- GPU hash cracking (hashcat + CuPy CUDA)
-- CUDA 13.x detection and graceful fallback
+- Full rewrite with 80 modules
+- GPU hash cracking via hashcat subprocess and CuPy CUDA kernel
+- CUDA 13.x auto-detection with graceful fallback to CPU
 
 ### v6.0.0
-- 60 modules
-- Full TUI rewrite with color categories and progress bars
+- 60 modules across 5 categories
+- TUI rewrite — ASCII logo, progress bars, color categories
 
 ### v5.0.0
-- First public version — 25 modules
+- First major release — 25 modules
 
 ## Legal Notice
 
@@ -223,4 +224,15 @@ Unauthorized scanning or exploitation may be illegal in your jurisdiction.
 
 ## License
 
-MIT License
+This project uses a **custom non-commercial license**.  
+See [LICENSE](LICENSE) for full details.
+
+**In short:**
+- ✅ Free to use and distribute for non-commercial purposes
+- ✅ Must keep original copyright notice
+- ❌ Cannot sell or use commercially without permission
+- ❌ Cannot modify without contacting the author first
+
+**To request permission to modify or use commercially:**  
+📧 [piolunson@proton.me](mailto:piolunson@proton.me)
+ 
