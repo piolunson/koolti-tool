@@ -1,6 +1,6 @@
-# KOOLTI-TOOL v7.0.1
+# KOOLTI-TOOL v7.1.0
 
-![Version](https://img.shields.io/badge/version-v7.0.1-blue)
+![Version](https://img.shields.io/badge/version-v7.1.0-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -155,7 +155,7 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 
 ## Changelog
 
-### v7.0.1
+### v7.1.0
 - Added new modules
 - Improved performance
 - Better UI in terminal
