@@ -191,7 +191,6 @@ Use module `98` to browse saved sessions, module `99` to clear them.
 ### v8.0.0
 - Added 20 new modules (46–62, 98–100): HTTP Fuzzer, JS Extractor, Form Extractor, Cookie Inspector, IP Reputation, Path Traversal, SQL Error Detector, Subdomain Takeover, TLS Checker, WhatWeb Lite, Latency Map, Certificate Transparency, Cache Inspector, Security Headers Score, DNS History, Multi-Port Banner Scan, Network Topology, History Viewer, History Clear
 - Added session history system — all results saved to `~/kooltitool/history/`
-- Full English rewrite, all comments removed
 - Total: 100 modules across 5 categories
 
 ### v7.1.1
