@@ -3,8 +3,9 @@
 ![Version](https://img.shields.io/badge/version-v8.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Modules](https://img.shields.io/badge/modules-100-purple)
 
-A terminal-based network & security toolkit with 100 modules across 5 categories.
+A terminal-based network & security toolkit with **100 modules** across 5 categories.
 
 ```
   ██╗  ██╗ ██████╗  ██████╗ ██╗  ████████╗██╗
@@ -20,7 +21,8 @@ A terminal-based network & security toolkit with 100 modules across 5 categories
 ```bash
 pip install requests psutil rich
 ```
-## Installation (Quick Start)
+
+## Installation
 
 ```bash
 git clone https://github.com/piolunson/koolti-tool.git
@@ -29,13 +31,13 @@ pip install -r requirements.txt
 python koolti_tool.py
 ```
 
-Optional GPU support:
+Optional GPU support for Hash Cracker (module 64):
 ```bash
-# hashcat (recommended — works out of the box, ~15B H/s)
+# hashcat — recommended, ~15 billion H/s, works out of the box
 winget install hashcat        # Windows
 sudo apt install hashcat      # Linux
 
-# CuPy (CUDA 12.x only, MD5 kernel)
+# CuPy — Python-native CUDA kernel (CUDA 12.x only, MD5)
 pip install cupy-cuda12x
 ```
 
@@ -66,119 +68,160 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 | 8 | Traceroute | Trace packet route |
 | 9 | Reverse IP Lookup | Hostname from IP |
 | 10 | GeoIP Info | Detailed geographic info |
-| 11 | Network Interface Stats | Bytes sent/received |
-| 12 | ARP Scanner | Discover LAN hosts |
-| 13 | Banner Grabber | Read service banners |
-| 14 | HTTP Method Tester | Test allowed HTTP methods |
-| 15 | SMTP Checker | Test SMTP connectivity |
-| 16 | FTP Checker | Test FTP + anonymous login |
-| 17 | SSH Checker | SSH banner and version |
-| 18 | SNMP Checker | SNMP community string check |
-| 19 | BGP ASN Lookup | Autonomous System info |
-| 20 | IP Range Scanner | Ping scan CIDR range |
-| 21 | Network Speed Test | Download speed test |
+| 11 | Network Interface Stats | Bytes sent/received per interface |
+| 12 | ARP Scanner | Discover live hosts on LAN |
+| 13 | Banner Grabber | Read raw service banners |
+| 14 | HTTP Method Tester | Test which HTTP methods are allowed |
+| 15 | SMTP Checker | Test SMTP connectivity + EHLO |
+| 16 | FTP Checker | Test FTP + anonymous login detection |
+| 17 | SSH Checker | SSH port + banner + version |
+| 18 | SNMP Checker | SNMP community string bruteforce |
+| 19 | BGP ASN Lookup | Autonomous System info via bgpview.io |
+| 20 | IP Range Scanner | Ping sweep a CIDR range |
+| 21 | Network Speed Test | Download speed via Cloudflare |
 | 22 | WiFi SSID Scanner | List nearby WiFi networks |
-| 23 | mDNS Discovery | Discover local services |
-| 24 | DNS Zone Transfer | Attempt AXFR transfer |
-| 25 | Open Redirect Tester | Test open redirect vulns |
-| 26 | CORS Checker | CORS policy analysis |
-| 27 | CDN Detector | Detect CDN provider |
-| 28 | IPv6 Checker | IPv6 connectivity check |
-| 29 | IPv6 Checker (ext) | Extended IPv6 info |
-| 30 | Shodan IP Lookup | Shodan API query |
+| 23 | mDNS Discovery | Discover local network services |
+| 24 | DNS Zone Transfer | Attempt AXFR zone transfer |
+| 25 | Open Redirect Tester | Test for open redirect vulnerabilities |
+| 26 | CORS Policy Checker | Analyze CORS headers and misconfigs |
+| 27 | CDN Detector | Detect CDN provider from headers |
+| 28 | IPv6 Checker | IPv6 connectivity and address info |
+| 29 | Port Knock Detector | Scan for port-knock protected ranges |
+| 30 | Shodan IP Lookup | Full Shodan API query (requires API key) |
 
-### 🕸 WEB / OSINT (31–45)
+### 🕸 WEB / OSINT (31–62)
 | # | Module | Description |
 |---|--------|-------------|
-| 31 | Admin Finder | Discover admin panels |
-| 32 | CMS Detector | Detect CMS platform |
-| 33 | WAF Detector | Detect web firewall |
-| 34 | HTTP Header Inspector | Analyze security headers |
-| 35 | Link Extractor | Extract all page links |
-| 36 | WHOIS Lookup | Domain registration info |
-| 37 | Robots.txt Checker | Analyze robots.txt + sitemap |
-| 38 | URL Scanner | Redirect chain + SSL check |
-| 39 | Email Validator | Validate email address |
-| 40 | Wayback Machine | Check archived versions |
-| 41 | Tech Stack Detector | Detect site technologies |
-| 42 | Broken Link Checker | Find dead links |
-| 43 | SSL Certificate Info | TLS cert details + expiry |
-| 44 | HTTP Status Bulk Checker | Check multiple URLs |
-| 45 | Google Dork Generator | Generate dork queries |
+| 31 | Admin Finder | Discover admin and login panels |
+| 32 | CMS Detector | Detect CMS platform (WP, Joomla, etc.) |
+| 33 | WAF Detector | Detect Web Application Firewall |
+| 34 | HTTP Header Inspector | Analyze HTTP + security headers |
+| 35 | Link Extractor | Extract all links from a page |
+| 36 | WHOIS Lookup | Domain registration info via RDAP |
+| 37 | Robots.txt Checker | Analyze robots.txt + sitemap.xml |
+| 38 | URL Scanner | Redirect chain + SSL + server info |
+| 39 | Email Validator | Format, domain, and disposable check |
+| 40 | Wayback Machine | Check archived versions on archive.org |
+| 41 | Tech Stack Detector | Detect JS frameworks, CDNs, analytics |
+| 42 | Broken Link Checker | Find dead links on a page |
+| 43 | SSL Certificate Info | TLS cert details + expiry countdown |
+| 44 | HTTP Status Bulk Checker | Check status of multiple URLs at once |
+| 45 | Google Dork Generator | Generate targeted Google dork queries |
+| 46 | HTTP Parameter Fuzzer | Fuzz URL parameters for unexpected responses |
+| 47 | JS File Extractor | Find external + inline JS on a page |
+| 48 | Form Extractor | Extract forms, inputs, and hidden fields |
+| 49 | Cookie Inspector | Analyze cookies and Secure/HttpOnly flags |
+| 50 | IP Reputation Check | Check if IP is proxy/hosting/flagged |
+| 51 | Path Traversal Tester | Test for directory traversal vulnerabilities |
+| 52 | SQL Error Detector | Detect SQL error messages in responses |
+| 53 | Subdomain Takeover Check | Check subdomains for takeover risk |
+| 54 | TLS Version Checker | Check supported TLS 1.0–1.3 versions |
+| 55 | WhatWeb Lite | Quick tech fingerprint from headers + HTML |
+| 56 | Latency Map | Ping 6 global endpoints and compare RTT |
+| 57 | Certificate Transparency | Find all SSL certs via crt.sh |
+| 58 | HTTP Cache Inspector | Analyze Cache-Control and caching headers |
+| 59 | Security Headers Score | Grade site headers A+/A/B/C/D/F |
+| 60 | DNS History Lookup | Historical DNS records via HackerTarget |
+| 61 | Multi-Port Banner Scan | Grab banners from 13 common ports at once |
+| 62 | Network Topology | Map route hops via TTL probing |
 
-### 🔐 CRYPTO (46–58)
+### 🔐 CRYPTO (63–75)
 | # | Module | Description |
 |---|--------|-------------|
-| 46 | Hash Generator | MD5/SHA/NTLM/SHA3 |
-| 47 | Hash Cracker | CPU + GPU (hashcat/CuPy) |
-| 48 | Base64 Tool | Encode/decode Base64 |
-| 49 | Caesar Cipher | Encrypt/decrypt/brute force |
-| 50 | Password Strength | Evaluate password security |
-| 51 | Wordlist Generator | Generate password lists |
-| 52 | ROT13 Cipher | ROT13 encoding |
-| 53 | XOR Cipher | XOR encryption |
-| 54 | Morse Code | Encode/decode Morse |
-| 55 | Binary Converter | Text ↔ binary |
-| 56 | Hex Converter | Text ↔ hexadecimal |
-| 57 | URL Encoder/Decoder | URL encoding |
-| 58 | JWT Decoder | Decode JWT tokens |
+| 63 | Hash Generator | MD5 / SHA-1/256/384/512 / SHA3 / NTLM |
+| 64 | Hash Cracker | CPU multiprocessing + GPU (hashcat / CuPy) |
+| 65 | Base64 Tool | Encode and decode Base64 |
+| 66 | Caesar Cipher | Encrypt / decrypt / brute force all 25 shifts |
+| 67 | Password Strength | Score password with tips (1–8 pts) |
+| 68 | Wordlist Generator | Generate password variants from a base word |
+| 69 | ROT13 Cipher | Symmetric ROT13 encoding |
+| 70 | XOR Cipher | XOR encrypt with a key (HEX + Base64 output) |
+| 71 | Morse Code | Encode and decode Morse code |
+| 72 | Binary Converter | Text ↔ binary (8-bit per char) |
+| 73 | Hex Converter | Text ↔ hexadecimal |
+| 74 | URL Encoder/Decoder | Percent-encode and decode URLs |
+| 75 | JWT Decoder | Decode JWT header + payload (no verify) |
 
-### 💻 SYSTEM (59–68)
+### 💻 SYSTEM (76–85)
 | # | Module | Description |
 |---|--------|-------------|
-| 59 | System Info | OS + hardware stats |
-| 60 | File Analyzer | File metadata + hash |
-| 61 | WiFi Passwords | Saved WiFi keys (Windows) |
-| 62 | Process Viewer | Top processes by RAM |
-| 63 | Disk Usage | Partition usage |
-| 64 | Environment Variables | System env vars |
-| 65 | Open Connections | Active network connections |
-| 66 | File Hash Verifier | Verify file integrity |
-| 67 | Directory Scanner | List directory contents |
-| 68 | Log File Reader | Read + filter log files |
+| 76 | System Info | OS, CPU, RAM, disk usage bars |
+| 77 | File Analyzer | Metadata + MD5/SHA-256 of any file |
+| 78 | WiFi Passwords | Read saved WiFi passwords (Windows only) |
+| 79 | Process Viewer | Top 20 processes by RAM usage |
+| 80 | Disk Usage | All partitions with usage bars |
+| 81 | Environment Variables | List + filter system env vars |
+| 82 | Open Connections | Active TCP/UDP network connections |
+| 83 | File Hash Verifier | Verify file integrity against known hash |
+| 84 | Directory Scanner | List directory contents with sizes |
+| 85 | Log File Reader | Read and keyword-filter log files |
 
-### 🛠 UTILITIES (69–80)
+### 🛠 UTILITIES (86–100)
 | # | Module | Description |
 |---|--------|-------------|
-| 69 | IP Calculator (CIDR) | Network IP calculator |
-| 70 | Random Password Generator | Secure password generator |
-| 71 | UUID Generator | v1/v4 UUID generator |
-| 72 | Text Case Converter | snake_case, CamelCase, etc. |
-| 73 | Lorem Ipsum Generator | Placeholder text |
-| 74 | JSON Formatter | Format + validate JSON |
-| 75 | Unix Timestamp Converter | Date ↔ timestamp |
-| 76 | Color Code Converter | HEX ↔ RGB |
-| 77 | String Analyzer | Character frequency stats |
-| 78 | Number Base Converter | DEC/BIN/OCT/HEX |
-| 79 | Regex Tester | Test regular expressions |
-| 80 | ASCII Art Generator | Text → ASCII art |
+| 86 | IP Calculator (CIDR) | Network, broadcast, hosts, type |
+| 87 | Random Password Generator | Secure random passwords with strength stars |
+| 88 | UUID Generator | UUID v1 (time-based) or v4 (random) |
+| 89 | Text Case Converter | UPPER / lower / snake_case / CamelCase / etc. |
+| 90 | Lorem Ipsum Generator | Configurable placeholder text |
+| 91 | JSON Formatter | Format, validate, and syntax-highlight JSON |
+| 92 | Unix Timestamp Converter | Timestamp ↔ date (UTC + local) |
+| 93 | Color Code Converter | HEX ↔ RGB + terminal color preview |
+| 94 | String Analyzer | Char frequency, word count, top letters |
+| 95 | Number Base Converter | DEC / BIN / OCT / HEX / Unicode |
+| 96 | Regex Tester | Test regex with match highlighting |
+| 97 | ASCII Art Generator | Text → block ASCII art (A–Z, 0–9) |
+| 98 | History Viewer | Browse saved session history |
+| 99 | History Clear | Permanently delete history files |
+| 100 | Network Topology (ext) | Extended TTL-based route mapping |
+
+## History
+
+All module results are automatically saved to:
+
+```
+~/kooltitool/history/YYYY-MM-DD/HHMMSS_NNN_module_name.json
+```
+
+Password-related modules (64, 67, 68, 87) are **excluded** from history.  
+Use module `98` to browse saved sessions, module `99` to clear them.
 
 ## Changelog
 
 ### v8.0.0
-- Added 20 new modules
-- bugfixes
-- Added usage history
+- Added 20 new modules (46–62, 98–100): HTTP Fuzzer, JS Extractor, Form Extractor, Cookie Inspector, IP Reputation, Path Traversal, SQL Error Detector, Subdomain Takeover, TLS Checker, WhatWeb Lite, Latency Map, Certificate Transparency, Cache Inspector, Security Headers Score, DNS History, Multi-Port Banner Scan, Network Topology, History Viewer, History Clear
+- Added session history system — all results saved to `~/kooltitool/history/`
+- Full English rewrite, all comments removed
+- Total: 100 modules across 5 categories
 
 ### v7.1.1
-- Fixed import modules
+- Fixed import issues in several modules
 
 ### v7.1.0
-- Added new modules
-- Improved performance
-- Better UI in terminal
+- Added 20 new modules (NET category)
+- Improved multiprocessing performance in Hash Cracker
+- Better TUI — ASCII logo, progress bars, color-coded categories
 
 ### v7.0.0
-- Initial large release
+- Initial large release — 80 modules
+- GPU hash cracking (hashcat + CuPy CUDA)
+- CUDA 13.x detection and graceful fallback
+
+### v6.0.0
+- 60 modules
+- Full TUI rewrite with color categories and progress bars
+
+### v5.0.0
+- First public version — 25 modules
 
 ## Legal Notice
+
 You are solely responsible for your actions.
 
-This tool is intended for educational purposes and authorized security testing only.  
-Use only on systems you own or have explicit written permission to test.  
+This tool is intended for **educational purposes** and **authorized security testing only**.  
+Use only on systems you own or have **explicit written permission** to test.  
 Unauthorized scanning or exploitation may be illegal in your jurisdiction.
 
 ## License
 
 MIT License
- 
