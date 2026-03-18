@@ -141,6 +141,16 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 | 79 | Regex Tester | Test regular expressions |
 | 80 | ASCII Art Generator | Text → ASCII art |
 
+## Changelog
+
+### v7.0.1
+- Added new modules
+- Improved performance
+- Better UI in terminal
+
+### v7.0.0
+- Initial large release
+
 ## Legal Notice
 
 This tool is intended for educational purposes and authorized security testing only.  
