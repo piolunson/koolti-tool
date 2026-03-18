@@ -49,7 +49,7 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 
 ## Preview
 
-![ss1](img/ss1.png)
+![ss1](img/ss1.jpg)
 
 ## Modules
 
