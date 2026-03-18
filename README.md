@@ -1,6 +1,6 @@
-# KOOLTI-TOOL v7.1.0
+# KOOLTI-TOOL v7.1.1
 
-![Version](https://img.shields.io/badge/version-v7.1.0-blue)
+![Version](https://img.shields.io/badge/version-v7.1.1-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -154,6 +154,9 @@ Enter a module number and press Enter. Type `h` for help, `q` to quit.
 | 80 | ASCII Art Generator | Text → ASCII art |
 
 ## Changelog
+
+### v7.1.1
+- Fixed import modules
 
 ### v7.1.0
 - Added new modules
