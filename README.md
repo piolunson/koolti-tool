@@ -1,6 +1,6 @@
-# KOOLTI-TOOL v8.1.0
+# KOOLTI-TOOL v8.1.1
 
-![Version](https://img.shields.io/badge/version-v8.1.0-blue)
+![Version](https://img.shields.io/badge/version-v8.1.1-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
 ![License](https://img.shields.io/badge/license-Custom--NC-red)
 ![Modules](https://img.shields.io/badge/modules-102-purple)
@@ -251,6 +251,9 @@ koolti-tool/
 ```
 
 ## Changelog
+
+### v8.1.1
+- Fixed import issues in several modules
 
 ### v8.1.0
 - Added **Plugin System** — extend koolti-tool with `.py` files dropped into `~/kooltitool/plugins/`
