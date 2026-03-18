@@ -1,6 +1,6 @@
 # KOOLTI-TOOL v7.0
 
-![Version](https://img.shields.io/badge/version-v9-blue)
+![Version](https://img.shields.io/badge/version-v7-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
