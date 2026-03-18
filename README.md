@@ -1,4 +1,4 @@
-# KOOLTI-TOOL v7.0.1
+Go# KOOLTI-TOOL v7.0.1
 
 ![Version](https://img.shields.io/badge/version-v7.0.1-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
@@ -46,6 +46,10 @@ python koolti_tool.py
 ```
 
 Enter a module number and press Enter. Type `h` for help, `q` to quit.
+
+## Preview
+
+![Demo](img/ss1.png)
 
 ## Modules
 
