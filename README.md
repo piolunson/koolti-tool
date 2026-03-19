@@ -285,6 +285,11 @@ Required in description: link to this repo + credit to piolunson.
 - Added 5 new CRYPTO modules: Vigenère Cipher `[110]`, Atbash Cipher `[111]`, Hash Identifier `[112]`, Advanced Password Generator `[113]`, Encoding Detector `[114]`
 - Total: **114 modules**
 
+### v8.1.1
+- Fixed plugin import problems
+- Stability fixes
+- Optimized TUI
+
 ### v8.1.0
 - Added **Plugin System** — extend with `.py` files in `~/kooltitool/plugins/`
 - Added **Auto-Update** — checks GitHub on every startup, `u` shortcut
@@ -299,8 +304,20 @@ Required in description: link to this repo + credit to piolunson.
 ### v7.x
 - 80 modules, GPU hash cracking, TUI rewrite
 
+### v6.0.1
+- Linux import fix
+
 ### v6.0.0
 - 60 modules, ASCII logo, progress bars
+
+### v5.1.0
+- 5 new modules
+
+### v5.0.2
+- bugfixes
+
+### v5.0.1
+- bugfixes
 
 ### v5.0.0
 - First major release — 25 modules
