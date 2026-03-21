@@ -2,13 +2,13 @@
 """
 KOOLTI-TOOL v8.2.1
 A terminal-based network & security toolkit.
-https://github.com/yourname/koolti-tool
+https://github.com/piolunson/koolti-tool
 
 Usage: python koolti_tool.py
 Requirements: pip install requests psutil rich
 """
 
-import os, sys, socket, requests, hashlib, random, string
+import os, sys, socket, requests, hashlib, random, string, multiprocessing
 import base64, re, itertools, time, platform, subprocess, tempfile
 from datetime import datetime
 from multiprocessing import Pool, cpu_count, Value
