@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-KOOLTI-TOOL v8.2.1
+KOOLTI-TOOL v10
 A terminal-based network & security toolkit.
 https://github.com/yourname/koolti-tool
 
